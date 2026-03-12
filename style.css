@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hamburger{
+    color: white;
+    display: none;
+    font-size: 25px;
+}
+#hero-section{
+    /* background: url('assets/bg.jpg'); */
+    background: linear-gradient(to right, #0f1425cc, #0f1425cc), url('assets/bg.jpg');
+    /* background: linear-gradient(to right, #0f1425cc, #0f1425cc), url('assets/bg.jpg'); */
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 0 0 50px 0;
+}
+.width-alignment{
+    width: 90%;
+    margin: auto;
+}
+#main-header{
+    border-bottom: 1px solid rgb(100, 100, 100);
+
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    color: white;
+}
+.header-location{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s;
+}
+.header-left{
+    display: flex;
+    gap: 50px;
+}
+.header-right{
+    display: flex;
+    gap: 10px;
+}
+.header-right .header-icon:hover{
+    transform: rotate(360deg);
+    background-color: #ff6a3e;
+}
+#nav-parent{
+    background-color: #0f1425;
+    position: sticky;
+    top: 0;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+#navbar .links{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+#navbar .links li{
+    list-style: none;
+}
+#navbar a{
+    text-decoration: none;
+    color: white;
+}
+.search-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links button{
+    background-color: #ff6a3e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.links button:hover{
+    background-color: white;
+    color: black;
+    /* transform: rotate(360deg); */
+    /* transform: skew(-15deg); */
+    /* transform: scale(1.1); */
+    /* transform: translate(50px); */
+}
+.logo{
+    color: #ff6a3e;
+    font-size: 30px;
+}
+.logo span{
+    color: white;
+}
+.hero-content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: 70%;
+    padding-top: 50px;
+}
+.hero-content h1{
+    font-size: 60px;
+    width: 60%;
+}
+.hero-content p{
+    width: 40%;
+    font-size: 20px;
+}
+.hero-btns button{
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.hero-btns button:first-child{
+    background: transparent;
+    border: 2px solid gray;
+}
+.hero-btns button:first-child:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+.hero-btns button:last-child{
+    background-color: #ff6a3e;
+    border: 2px solid #ff6a3e;
+    margin-left: 10px;
+}
+.hero-btns button:last-child:hover{
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+}
+
+/* pseudo selectors */
+
+#cards{
+    color: white;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+#cards .card{
+    /* height: 200px;
+    width: 200px; */
+    background-color: rgba(13, 20, 30, 0.47);
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all .5s;
+}
+#cards .card:hover{
+    background-color: rgba(35, 44, 57, 0.47);
+}
+#cards .card i{
+    font-size: 50px;
+}
+
+#about-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.about-section-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+.about-section-left h1{
+    font-size: 60px;
+    font-weight: lighter;
+}
+.about-section-left h1 span{
+    font-weight: bold;
+}
+.about-left-info{
+    font-size: 17px;
+    color: rgba(18, 19, 40, 0.83);
+    width: 80%;
+
+}
+.about-section-left-header{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #ff6a3e;
+}
+.border-line{
+    width: 40px;
+    height: 2px;
+    background-color: #ff6a3e;
+}
+.about-section-footer{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.about-section-footer img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.about-section-footer-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.about-section-right{
+    border: 10px solid #ff6a3e;
+    width: 40%;
+    overflow: hidden;
+}
+.about-section-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all .5s;
+}
+.about-section-right img:hover{
+    transform: scale(1.1);
+}
+
+
+@media(max-width:1100px){
+    #navbar{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media(max-width:1015px){
+    #header .header-left{
+     display: none;
+    }
+    #header{
+        justify-content: flex-end;
+    }
+}
+@media(max-width:950px){
+    #cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }   
+    .hero-content{
+        align-items: center;
+    }
+    .hero-content h1, .hero-content p{
+        text-align: center;
+        width: 100%;
+    }
+}
+/* @media (max-width:680px) {
+    .hero-content{
+        align-items: center;
+    }
+    .hero-content h1, .hero-content p{
+        text-align: center;
+        width: 100%;
+    }
+} */
+@media (max-width:900px) {
+    #navbar{
+        flex-direction: row;
+    }
+    .hamburger{
+        display: block;
+    }
+    #navbar .links{
+        display: none;
+    }
+}
+
+@media (max-width:800px) {
+    #about-section{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    #about-section .about-section-right{
+        width: 100%;
+    }
+    #about-section .about-section-left{
+        text-align: center;
+    }
+    #about-section .about-section-left{
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+    }
+}
